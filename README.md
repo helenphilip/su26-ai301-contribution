@@ -2,14 +2,14 @@
 
 **Contribution Number:** 1  
 **Student:** Helen Philip 
-**Issue:** [GitHub issue link]  
+**Issue:** [[GitHub issue link]](https://github.com/apache/gravitino/issues/9673)
 **Status:** Phase 1
 
 ---
 
 ## Why I Chose This Issue
 
-[1-2 paragraphs explaining why this issue interests you, how it matches your skills/learning goals, what you hope to learn]
+This issue interests me because it involves improving the efficiency and maintainability of an existing software system rather than simply adding a new feature. Reusing the FileSystem cache in both the fileset server and client modules can reduce redundant operations and improve performance, which are important goals in large-scale software projects. I am interested in learning how caching mechanisms are implemented and shared across different components of a system, as this is a common technique used in real-world software engineering.
 
 ---
 
@@ -17,7 +17,7 @@
 
 ### Problem Description
 
-[In your own words, what's broken or missing?]
+Currently, the fileset server and client modules do not reuse the existing FileSystem cache implementation. As a result, these components may create duplicate cache instances or perform unnecessary filesystem operations, leading to inefficiencies and increased maintenance complexity. The goal of this issue is to modify the server and client modules so they share and reuse the existing FileSystem cache wherever possible.
 
 ### Expected Behavior
 
